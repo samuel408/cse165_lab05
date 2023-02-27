@@ -4,12 +4,12 @@
 using namespace std;
 
 struct Circle {
-       double area=3.14159;
-
-    private:
-    double x,y,r ;// private double variables
+    private:// private double variables
+    double x=0,y=0;
+     double r = 1 ;
 
     public:
+         double area = (3.14159)*(r*r);
     void setX(double X){
         x=X;
     }
@@ -28,15 +28,14 @@ struct Circle {
     }
 
     double getR(){
-        if (r==0){
-            return 1;
-        }
+        
         return r;
     }
 
     double getY(){
         return y;
     }
+
 
 
 
